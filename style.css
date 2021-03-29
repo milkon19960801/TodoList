@@ -1,0 +1,41 @@
+
+#header {
+    text-align:center;
+    color: black;
+}
+body{
+    background-color:antiquewhite;
+}
+#inputForm {
+    width: 30%;
+    margin: 0 auto;
+}
+
+#todo{
+    height:25px;
+    width: 300px;
+}
+#clickMe {
+    font-family:  'Times New Roman';
+    height: 30px;
+    width: 65px;
+    font-size: 15px;
+    background-color: aliceblue;
+    
+}
+#Content{
+    background-color: aliceblue;
+    width: 30%;
+    margin: 0 auto;
+}
+li{
+    font-size: 20px;
+    font-family:  'Times New Roman';
+    position:relative;
+    padding: 5px 0px 5px 0px;
+}
+ul{
+    margin: 10px;
+    padding: 0px;
+    list-style-type:none;
+}
