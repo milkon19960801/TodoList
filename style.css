@@ -1,7 +1,11 @@
-
+*{
+    font-family:  'Times New Roman';
+    font-size: 20px;
+}
 #header {
     text-align:center;
     color: black;
+    font-size: 40px;
 }
 body{
     background-color:antiquewhite;
@@ -16,10 +20,8 @@ body{
     width: 300px;
 }
 #clickMe {
-    font-family:  'Times New Roman';
     height: 30px;
-    width: 65px;
-    font-size: 15px;
+    width: 60px;
     background-color: aliceblue;
     
 }
@@ -29,13 +31,18 @@ body{
     margin: 0 auto;
 }
 li{
-    font-size: 20px;
-    font-family:  'Times New Roman';
-    position:relative;
-    padding: 5px 0px 5px 0px;
+    font-size: 25px;
+    position: relative;
+    padding: 5px 0px 5px 5px;
+}
+
+li.checked{
+    background:rgb(225, 237, 248);
+    text-decoration: line-through;
 }
 ul{
-    margin: 10px;
-    padding: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
     list-style-type:none;
 }
