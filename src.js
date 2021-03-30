@@ -1,12 +1,21 @@
-const doFunction = function () {    
-    let userinput = document.getElementById('todo');
-    const ul = document.getElementById('List');
+const doFunction = function () {
     let li = document.createElement('li');
     li.addEventListener('click',eventHandler);
-    li.innerHTML = userinput.value;
-    ul.appendChild(li);
+    li.innerHTML = document.getElementById('todo').value;
+    li.appendChild(createButton());
+    document.getElementById('List').appendChild(li);
 }
 
+const createButton = function(){
+    const button = document.createElement('BUTTON');
+    button.className = 'x_button';
+    button.addEventListener('click',function(){
+       button.parentElement.remove();
+       button.remove();
+    })
+    button.innerHTML = 'Delete';
+    return button
+}
 
 function eventHandler(event){
     if(event.type == 'click'){
