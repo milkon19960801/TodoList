@@ -23,6 +23,7 @@ body{
     height: 30px;
     width: 60px;
     background-color: aliceblue;
+    border-radius: 5px;
     
 }
 #Content{
@@ -45,4 +46,9 @@ ul{
     height: 100%;
     padding: 0;
     list-style-type:none;
+}
+x_button{
+    margin: 10px 10px 10px 100px;
+    
+
 }
