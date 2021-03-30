@@ -53,7 +53,7 @@ ul{
     height: 100%;
     list-style-type:none;
 }
-.x_button {
+.deleteButton {
     position: absolute;
     border : none;
     right: 0;
