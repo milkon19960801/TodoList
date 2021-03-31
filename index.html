@@ -11,12 +11,13 @@
 <body>
     
     <H1 id="header">Simple to do list.</H1>
-    <form id="inputForm">
-        <label for="todo"></label>
+    <div class="input-wrapper">
+        <!-- <form id="inputForm"> -->
         <input type="text" onfocus="this.value=''"  id="todo" name="todo" placeholder="New task">
-        <input id="clickMe" type="button" onclick="doFunction()" value="Enter"/>
-     
-    </form>
+        <input id="clickMe" type="button" onclick="doFunction()" value="Add"/>
+        <!-- </form>  -->
+    </div>
+  
 
     <div id="Content">
         <ul id ="List">
