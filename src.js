@@ -1,11 +1,13 @@
-let myStorage = window.localStorage;
+let myStorage = window.sessionStorage;
 
 window.onload = function(){
     readLocalStorage();
 }
 const readLocalStorage =  function(){
-   
     for(let i = 0;i<myStorage.length;i++){
+        if(myStorage.key(i) == "IsThisFirstTime_Log_From_LiveServer"){
+            continue;
+        }
         let val = myStorage.getItem(myStorage.key(i));
         let li = createElement();
         li.innerHTML = val;
@@ -20,12 +22,12 @@ const doFunction = function () {
     li.innerHTML = document.getElementById('todo').value;
     li.appendChild(createButton());
     document.getElementById('List').appendChild(li);
+    console.log(myStorage);
 }
 
 const createElement = function(){
     let li = document.createElement('li');
     li.addEventListener('click',eventHandler);
-   
     return li;
 }
 
