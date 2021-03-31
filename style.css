@@ -23,7 +23,6 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-
 #todo{
     margin-right: 5px;
     width: 100%;
@@ -37,7 +36,6 @@ body{
 #clickMe {
     height:100%;
     background-color: #F5F6F7;
-
 }
 #Content{
     max-width: 40%;
@@ -49,11 +47,9 @@ li{
     height: 25px;
     padding: 8px 8px 5px 5px;
     color: #F5F6F7;
-    
 }
-
 li.checked{
-    background:#F7CAC9;
+    background:#51516d;
     text-decoration: line-through;
 }
 ul{
